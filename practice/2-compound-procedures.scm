@@ -11,3 +11,27 @@
   (sum-of-squares (+ a 1) (* a 2)))
 
 (f 4)
+
+
+(define (something-in-the x)
+  (cond ((= x 1) "something in the rain")
+        ((= x 2) "something in the sky")
+        (else "nothing at all")))
+
+
+(something-in-the 4)
+
+(define (abs x)
+  (cond ((= x 0) 0)
+        ((> x 0) x)
+        ((< x 0) (- x))))
+
+(abs -7)
+
+(define (abs y)
+  (if (< y 0) (- y)
+       y))
+
+(abs -3)
+
+;; 
