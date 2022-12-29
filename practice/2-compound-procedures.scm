@@ -34,4 +34,19 @@
 
 (abs -3)
 
-;; 
+;; Applicative and Normal orders
+
+(define (zero x) (- x x))
+
+(zero (random 10))
+
+;; Applic
+;; (zero 1)
+;; (- 1 1)
+;; 0
+
+;; Normal
+;; (zero (random 10))
+;; ==> (- (random 10) (random 10))
+;; ==> (- 6 2)
+;; ==> 4
