@@ -1,0 +1,6 @@
+(define (bigger-square x y z)
+                (if (> x y)
+                    (if (> y z) (+ (square x) (square y))
+                                (+ (square x) (square z)))
+                    (if (> x z) (+ (square y) (square x))
+                                (+ (square y) (square z)))))
